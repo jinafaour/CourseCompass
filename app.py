@@ -45,6 +45,7 @@ st.markdown("""
 1.  **Be Honest:** Pick what you *actually* do, not what you wish you did.
 2.  **No Data Saved:** We do not store your answers. **Screenshot your result** at the end.
 """)
+3. **This application is specifically designed for students currently in Grade 8 through Grade 12. It is intended to assist students transitioning into high school (Grade 8) as well as those navigating senior elective requirements.
 st.markdown("---")
 
 # ==========================================
@@ -271,3 +272,4 @@ if submitted:
     st.markdown("---")
     with st.expander("⚙️ How this Algorithm Works"):
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
+
