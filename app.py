@@ -57,8 +57,8 @@ st.markdown("""
 # ==========================================
 with st.expander("ℹ️ About This Tool (The Problem & The Solution)", expanded=True):
     st.markdown("""
-    ### 🛑 The Problem (Pain Points)
-    * **Course Guides are Overwhelming:** The PDF guide is 60+ pages long. It's hard to find what you actually like.
+    ### 🛑 The Problem 
+    * **Switching from Elementary to High school can be overwhelming for both parents and students:**. It's hard to find what you actually like at this young age.
     * **"Friend-Following":** Many students just pick the courses their friends pick, which leads to boredom and bad grades.
     * **The "Job" Trap:** Asking a 13-year-old *"What job do you want?"* is stressful. You shouldn't have to decide your career yet.
     
@@ -303,4 +303,5 @@ if submitted:
     st.markdown("---")
     with st.expander("⚙️ How this Algorithm Works"):
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
+
 
