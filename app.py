@@ -15,13 +15,29 @@ st.markdown("""
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     .stMarkdown, .stTitle, .stHeader, .stSubheader { color: #000000; }
+    .disclaimer-box { background-color: #fff3cd; padding: 15px; border-radius: 5px; border-left: 5px solid #ffc107; color: #856404; margin-bottom: 20px; }
 </style>
 """, unsafe_allow_html=True)
 
 st.title("🧭 BC High School Course Compass")
 
 # ==========================================
-# 2. THE PITCH (ADDED BACK)
+# DISCLAIMER SECTION (ADDED AT TOP)
+# ==========================================
+st.markdown("""
+<div class='disclaimer-box'>
+    <strong>⚠️ CRITICAL DISCLAIMER: Non-Institutional Status</strong><br>
+    This application is a supplementary planning resource <strong>ONLY</strong>.
+    <ul>
+        <li>It <strong>does not replace</strong> official academic counseling, school board curriculum guides, or authorized advice from your educational institution.</li>
+        <li><strong>Verification Required:</strong> All course selections and graduation requirements must be verified with a certified school counselor or administrator.</li>
+        <li><strong>Target Audience:</strong> Designed for students in Grade 8 (transitioning) through Grade 12.</li>
+    </ul>
+</div>
+""", unsafe_allow_html=True)
+
+# ==========================================
+# 2. THE PITCH
 # ==========================================
 with st.expander("ℹ️ About This Tool (The Problem & The Solution)", expanded=True):
     st.markdown("""
