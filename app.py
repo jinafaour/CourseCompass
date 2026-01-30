@@ -34,7 +34,7 @@ with st.sidebar:
     To match your natural *personality traits* (not just your grades) with the official High School Elective Clusters.
     
     **Outcome:**
-    A personalized roadmap for Grade 9 entry courses and Grade 12 graduation requirements.
+    A personalized roadmap for **Grade 9 entry electives** and **Senior High School pathways**.
     """)
 
 # ==========================================
@@ -303,3 +303,4 @@ if submitted:
     st.markdown("---")
     with st.expander("⚙️ How this Algorithm Works"):
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
+
