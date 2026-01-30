@@ -20,23 +20,35 @@ st.markdown("""
 
 st.title("🧭 BC High School Course Compass")
 
-# --- INTRO & INSTRUCTIONS ---
-with st.expander("ℹ️ What is this tool?", expanded=True):
+# ==========================================
+# 2. THE PITCH (ADDED BACK)
+# ==========================================
+with st.expander("ℹ️ About This Tool (The Problem & The Solution)", expanded=True):
     st.markdown("""
-    **For Grade 8 Students in British Columbia:**
-    High school has many elective options. This tool analyzes your "Cognitive Architecture" (how you like to think) to suggest the BC Electives where you will naturally thrive.
+    ### 🛑 The Problem (Pain Points)
+    * **Course Guides are Overwhelming:** The PDF guide is 60+ pages long. It's hard to find what you actually like.
+    * **"Friend-Following":** Many students just pick the courses their friends pick, which leads to boredom and bad grades.
+    * **The "Job" Trap:** Asking a 13-year-old *"What job do you want?"* is stressful. You shouldn't have to decide your career yet.
+    
+    ### 💡 The Idea
+    This tool is a **"Cognitive Compass."** We don't ask about jobs. We ask about **how your brain works**.
+    * Do you think in **Systems**? (Engineering)
+    * Do you think in **Stories**? (Drama/Marketing)
+    * Do you think in **People**? (Leadership/Socials)
+    
+    **The Goal:** To match your natural "Thinking Style" to the **BC High School Curriculum** so you actually enjoy your classes next year.
     """)
 
 st.markdown("---")
 st.markdown("""
 #### ⚠️ Critical Instructions
 1.  **Be Honest:** Pick what you *actually* do, not what you wish you did.
-2.  **No Data Saved:** We do not store your answers. **Print this screen** at the end to save your results.
+2.  **No Data Saved:** We do not store your answers. **Screenshot your result** at the end.
 """)
 st.markdown("---")
 
 # ==========================================
-# 2. THE QUESTION DATABASE (Unbiased)
+# 3. THE QUESTION DATABASE
 # ==========================================
 question_database = [
     # --- A: Analytical ---
@@ -81,7 +93,7 @@ question_database = [
 ]
 
 # ==========================================
-# 3. THE UI FORM
+# 4. THE UI FORM
 # ==========================================
 user_answers = {}
 with st.form("quiz_form"):
@@ -98,7 +110,7 @@ with st.form("quiz_form"):
     submitted = st.form_submit_button("Find My Path 🚀", type="primary")
 
 # ==========================================
-# 4. LOGIC ENGINE (V1: UNIVERSAL EDITION)
+# 5. LOGIC ENGINE (UNIVERSAL BC)
 # ==========================================
 if submitted:
     # A. Calculate Weighted Scores
@@ -199,7 +211,7 @@ if submitted:
         rec_courses = ["ADST Rotation (Wood/Metal/Drafting)", "Visual Arts", "Food Studies"]
         launchpad_links = ["- [Ted-Ed](https://ed.ted.com/)"]
 
-    # --- DISPLAY RESULTS (UNIVERSAL STYLE) ---
+    # --- DISPLAY RESULTS ---
     st.balloons()
     
     # Header & Desc
@@ -218,7 +230,7 @@ if submitted:
         st.info("💡 **Reminder:** Your results disappear when you close this tab.")
 
     # ==========================================
-    # ACTION PLAN (THE HOMEWORK)
+    # ACTION PLAN
     # ==========================================
     st.markdown("---")
     st.subheader("📝 Your 3-Step Action Plan")
