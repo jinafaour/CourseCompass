@@ -22,7 +22,23 @@ st.markdown("""
 st.title("🧭 BC High School Course Compass")
 
 # ==========================================
-# DISCLAIMER SECTION (ADDED AT TOP)
+# NEW: SIDEBAR DESCRIPTION (LEFT TOP)
+# ==========================================
+with st.sidebar:
+    st.header("📌 App Summary")
+    st.info("""
+    **What is this?**
+    A decision-support tool for **Grade 8-12 students** in BC.
+    
+    **Purpose:**
+    To match your natural *personality traits* (not just your grades) with the official High School Elective Clusters.
+    
+    **Outcome:**
+    A personalized roadmap for Grade 9 entry courses and Grade 12 graduation requirements.
+    """)
+
+# ==========================================
+# DISCLAIMER SECTION
 # ==========================================
 st.markdown("""
 <div class='disclaimer-box'>
