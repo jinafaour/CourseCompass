@@ -23,20 +23,16 @@ st.title("🧭 BC High School Course Compass")
 # ==========================================
 # 2. THE PITCH (ADDED BACK)
 # ==========================================
-with st.expander("ℹ️ About This Tool (The Problem & The Solution)", expanded=True):
+with st.expander("ℹ️ Why use this tool?", expanded=True):
     st.markdown("""
-    ### 🛑 The Problem (Pain Points)
-    * **Course Guides are Overwhelming:** The PDF guide is 60+ pages long. It's hard to find what you actually like.
-    * **"Friend-Following":** Many students just pick the courses their friends pick, which leads to boredom and bad grades.
-    * **The "Job" Trap:** Asking a 13-year-old *"What job do you want?"* is stressful. You shouldn't have to decide your career yet.
+    ### 🎯 Stop Guessing. Start Strategizing.
+    High school is the first time you get to design your own life. Don't leave it to chance.
     
-    ### 💡 The Idea
-    This tool is a **"Cognitive Compass."** We don't ask about jobs. We ask about **how your brain works**.
-    * Do you think in **Systems**? (Engineering)
-    * Do you think in **Stories**? (Drama/Marketing)
-    * Do you think in **People**? (Leadership/Socials)
+    * **🔦 Find the Hidden Gems:** Your school offers incredible courses (from *Robotics* to *Graphic Design*), but they are often buried deep in a 60-page PDF. We help you find the ones that match your vibe.
+    * **🦁 Lead, Don't Follow:** It is easy to pick the same classes as your friends. It is smarter to pick the classes where *you* will get the easy A because your brain is built for them.
+    * **🧠 Your "Cognitive Code":** You don't need to know your future job title yet. You just need to know your **Operating System**. Are you a *Builder*? A *Debater*? A *Designer*?
     
-    **The Goal:** To match your natural "Thinking Style" to the **BC High School Curriculum** so you actually enjoy your classes next year.
+    **The Mission:** Answer 30 rapid-fire questions to unlock your **Profile Code** and get a personalized elective list.
     """)
 
 st.markdown("---")
@@ -271,3 +267,4 @@ if submitted:
     st.markdown("---")
     with st.expander("⚙️ How this Algorithm Works"):
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
+
