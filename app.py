@@ -304,4 +304,9 @@ if submitted:
     with st.expander("⚙️ How this Algorithm Works"):
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
 
+# Analytics Badge
+    st.markdown("---")
+    st.markdown("![Visitor Count](https://api.visitorbadge.io/api/visitors?path=jinafaour.coursecompass&countColor=%23263759)")
+
+
 
