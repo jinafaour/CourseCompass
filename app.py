@@ -304,12 +304,8 @@ if submitted:
     with st.expander("⚙️ How this Algorithm Works"):
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
 
-    # Completion Tracking Pixel
-    st.markdown("![Completion Count](https://api.visitorbadge.io/api/visitors?path=jinafaour.coursecompass.completed&countColor=%232b8a3e)")
 
-# Correct placement at absolute bottom of file
-st.markdown("---")
-st.markdown("![Visitor Count](https://api.visitorbadge.io/api/visitors?path=jinafaour.coursecompass&countColor=%23263759)")
+
 
 
 
