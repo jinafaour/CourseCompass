@@ -308,7 +308,7 @@ if submitted:
 # 6. GLOSSARY / PROFILE DICTIONARY
 # ==========================================
 st.markdown("---")
-with st.expander("Profile Code Glossary: All Combinations Explained"):
+with st.expander("**Profile Code Glossary: All Combinations Explained**"):
     st.markdown("""
     **The 5 Base Traits:**
     * **[A] Analytical:** Logic, systems, data, troubleshooting.
@@ -331,6 +331,7 @@ with st.expander("Profile Code Glossary: All Combinations Explained"):
     * **NC / CN (The Synthesizers):** Environmental Design, Science Communication. Blending biology or nature with creative presentation.
     * **SP / PS (The Coordinators):** Event Management, Applied Trades. Blending social organization with hands-on physical execution.
     """)
+
 
 
 
