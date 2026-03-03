@@ -304,6 +304,12 @@ if submitted:
     with st.expander("⚙️ How this Algorithm Works"):
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
 
+st.markdown("---")
+    st.subheader("Distribute Result")
+    st.info("Zero data is stored. Copy this text manually to compare profiles with your peers:")
+    st.code(f"My cognitive profile is {profile_code}. Take the BC Course Compass diagnostic to find yours: [YOUR_APP_URL]")
+
+
 
 
 
