@@ -304,6 +304,35 @@ if submitted:
     with st.expander("⚙️ How this Algorithm Works"):
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
 
+# ==========================================
+# 6. GLOSSARY / PROFILE DICTIONARY
+# ==========================================
+st.markdown("---")
+with st.expander("Profile Code Glossary: All Combinations Explained"):
+    st.markdown("""
+    **The 5 Base Traits:**
+    * **[A] Analytical:** Logic, systems, data, troubleshooting.
+    * **[N] Natural:** Biology, environment, physical world investigation.
+    * **[C] Creative:** Design, storytelling, aesthetics, rule-breaking.
+    * **[S] Social:** Communication, leadership, empathy, human behavior.
+    * **[P] Practical:** Hands-on execution, mechanics, physical tools.
+
+    **Primary Code Clusters:**
+    * **AN / NA (The Bio-Analysts):** Health Sciences, Environmental Research. Driven by applying logic to living systems.
+    * **NP / PN (The Engineers):** Physics, Mechanics. Driven by understanding the physical laws of how machines operate.
+    * **AP / PA (The Builders):** Robotics, Hardware. Driven by designing and physically assembling mechanical solutions.
+    * **AC / CA (The Coders):** Software, Digital Media. Driven by solving logical puzzles through digital creation.
+    * **AS / SA (The Strategists):** Business, Leadership. Driven by organizing people and optimizing social or economic systems.
+    * **CS / SC (The Creators):** Fine Arts, Media. Driven by expressing ideas and influencing others through visual or auditory storytelling.
+    * **CP / PC (The Makers):** Architecture, Industrial Design. Driven by applying aesthetic creativity to functional, physical objects.
+
+    **Secondary (Hybrid) Clusters:**
+    * **NS / SN (The Guides):** Community Health, Outdoor Education. Blending natural world curiosity with human interaction.
+    * **NC / CN (The Synthesizers):** Environmental Design, Science Communication. Blending biology or nature with creative presentation.
+    * **SP / PS (The Coordinators):** Event Management, Applied Trades. Blending social organization with hands-on physical execution.
+    """)
+
+
 
 
 
