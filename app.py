@@ -305,6 +305,79 @@ if submitted:
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
 
 # ==========================================
+    # TACTICAL STUDY ENGINE (GRADE 8 CORE)
+    # ==========================================
+    st.markdown("---")
+    st.subheader("🧠 Tactical Study Engine")
+    st.write("Optimize your study habits based on your cognitive profile and school schedule.")
+    
+    with st.expander("Configure Your Study Plan", expanded=False):
+        schedule_type = st.radio(
+            "Select Timetable Structure:",
+            ("Linear (Full Year - Day 1/Day 2)", "Semester (Half Year - Fast Pace)")
+        )
+        
+        core_courses = st.multiselect(
+            "Select Core Subjects to Optimize:",
+            ["Math 8", "Science 8", "English 8", "Social Studies 8", "French 8"],
+            default=["Math 8", "Science 8"]
+        )
+        
+        if st.button("Generate Study Tactics"):
+            st.markdown("### 🎯 Your Custom Directives")
+            
+            # Timetable Directives
+            st.info(f"**Pacing Strategy ({schedule_type}):**")
+            if "Linear" in schedule_type:
+                st.write("* **The Linear Trap:** 10 months is a long time. You will forget September's math in June. You must use 'Spaced Repetition'. Spend 10 minutes every Sunday reviewing one concept from two months ago.")
+            else:
+                st.write("* **The Semester Sprint:** You cover a chapter every few days. You cannot fall behind. Review notes the exact same day you write them. Waiting for the weekend is too late.")
+                
+            st.markdown("---")
+            
+            # Profile-Specific Tactics per Course
+            for course in core_courses:
+                st.markdown(f"#### {course} Tactics for a '{profile_code}' Brain")
+                
+                # PA / AP Logic
+                if profile_code in ["PA", "AP"]:
+                    if "Math" in course:
+                        st.write("1. **Visual Systems:** Do not just read formulas. Use [Desmos](https://www.desmos.com/) to visualize how the equation changes the graph.")
+                        st.write("2. **Mechanics:** Treat equations like machines. Break them down step-by-step to see how the inputs create the outputs.")
+                    elif "Science" in course:
+                        st.write("1. **Build It:** When studying cells or physics, draw structural diagrams or build physical models. You need to see the architecture.")
+                    else:
+                        st.write("1. **Structured Logic:** For writing or history, use rigid outlines. Build your essays like a construction project: foundation (thesis), framing (points), finish (conclusion).")
+                
+                # AC / CA Logic
+                elif profile_code in ["AC", "CA"]:
+                    if "Math" in course:
+                        st.write("1. **Algorithmic Thinking:** Write down the steps to solve a problem as if you are programming a computer to do it.")
+                    elif "English" in course or "Social" in course:
+                        st.write("1. **Systematize the Story:** Map out historical events or novel plots using flowcharts or digital mind maps.")
+                        
+                # S / C Dominant Logic (SC, CS, AS, SA)
+                elif "S" in profile_code or "C" in profile_code:
+                    if "Math" in course or "Science" in course:
+                        st.write("1. **The Feynman Technique:** Your brain works best when communicating. Teach the concept to a parent, friend, or even a pet. If you can't explain it simply, you don't know it yet.")
+                    else:
+                        st.write("1. **Narrative Construction:** Turn historical facts or scientific processes into a story. You remember characters and plots better than raw data.")
+                
+                # N Dominant Logic (AN, NA, NP, PN)
+                elif "N" in profile_code:
+                    if "Science" in course:
+                        st.write("1. **Real-World Anchors:** Connect abstract textbook concepts to natural phenomena you can observe outside.")
+                    else:
+                        st.write("1. **Categorization:** You are naturally good at taxonomy. Group historical events, math formulas, or vocabulary words into biological-style classification trees.")
+                
+                # Fallback for balanced/general
+                else:
+                    st.write("1. **Rotational Studying:** Switch between reading, drawing mind-maps, and practice quizzes every 20 minutes to maintain engagement.")
+
+
+
+
+# ==========================================
 # 6. GLOSSARY / PROFILE DICTIONARY
 # ==========================================
 st.markdown("---")
