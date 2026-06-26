@@ -304,52 +304,6 @@ if submitted:
     with st.expander("⚙️ How this Algorithm Works"):
         st.write("This tool uses a weighted behavioral analysis to map your natural instincts to general High School Electives (ADST, Arts, and Sciences).")
 
-# ==========================================
-    # TACTICAL STUDY ENGINE (INTERACTIVE)
-    # ==========================================
-    st.markdown("---")
-    st.subheader("🧠 Tactical Study Engine")
-    
-    with st.expander("Configure Your Study Plan", expanded=False):
-        pacing = st.radio("Timetable Pacing:", ["Linear (Full Year)", "Semester (Half Year)"])
-        course = st.selectbox("Select Core Subject:", ["Math 8", "Science 8", "English 8", "Social Studies 8"])
-        
-        # Profile mapping (PA is fixed to the user's result)
-        profile = "PA" 
-        
-        if st.button("Generate Strategy"):
-            st.markdown(f"### Strategy for {course}")
-            
-            # 1. Pacing Logic
-            if "Linear" in pacing:
-                st.info("⏱️ **Pacing: Spaced Repetition** - Dedicate 15 mins every Sunday to review concepts from 2 months ago.")
-            else:
-                st.warning("⚡ **Pacing: Rapid Acquisition** - Review notes the same day they are written to prevent gaps.")
-                
-            # 2. Dynamic Tactic + Example Mapping
-            st.markdown("---")
-            
-            # Logic for PA (The Builders)
-            if course == "Math 8":
-                st.markdown("**Tactic:** Visual Mechanics")
-                st.write("Use manipulatives or digital tools to build the math.")
-                st.write("💡 **Example:** Use a pegboard and rubber bands to physically construct a right triangle to prove the Pythagorean Theorem.")
-                
-            elif course == "Science 8":
-                st.markdown("**Tactic:** Physical Modeling")
-                st.write("Build a 3D structural model of the subject.")
-                st.write("💡 **Example:** Build a 3D model of an animal cell using household items (gelatin, beads) instead of drawing a 2D diagram.")
-                
-            elif course == "English 8":
-                st.markdown("**Tactic:** Structural Mapping")
-                st.write("Treat your essay like an architectural project.")
-                st.write("💡 **Example:** Create a 'Blueprint' of your essay using post-it notes on a wall to organize your thesis and supporting points before writing.")
-
-            elif course == "Social Studies 8":
-                st.markdown("**Tactic:** Systems Mapping")
-                st.write("Treat historical events as interconnected mechanical systems.")
-                st.write("💡 **Example:** Map the spread of the Black Death as a network flow chart to understand trade route transmission.")
-
 
 
 # ==========================================
