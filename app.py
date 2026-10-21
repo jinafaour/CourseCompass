@@ -22,7 +22,7 @@ st.markdown("""
 st.title("🧭 BC High School Course Compass")
 
 # ==========================================
-# NEW: SIDEBAR DESCRIPTION (LEFT TOP)
+# SIDEBAR DESCRIPTION & SENIOR LINK
 # ==========================================
 with st.sidebar:
     st.header("📌 App Summary")
@@ -36,6 +36,13 @@ with st.sidebar:
     **Outcome:**
     A personalized roadmap for **Grade 9 entry electives** and **Senior High School pathways**.
     """)
+    st.markdown("---")
+    st.markdown("### 🎓 Senior Progression")
+    st.markdown(
+        "In Grades 10–12? Use the [BC Senior Pathway"
+        " Mapper](https://bc-senior-pathway-mapper-grade10-12.streamlit.app)"
+        " to manage graduation credit distribution and university prerequisites."
+    )
 
 # ==========================================
 # DISCLAIMER SECTION
@@ -283,6 +290,14 @@ if submitted:
     
     st.warning("💡 **Tip:** If your 'Analytical' and 'Creative' bars are almost equal, you are a **Hybrid**. You should look at courses from *both* lists!")
 
+    # --- CROSS-PROMOTION TO SENIOR MAPPER ---
+    st.markdown("---")
+    st.info(
+        "🎓 **Entering Grades 10–12?** Transition your profile code to the "
+        "[BC Senior Pathway Mapper](https://bc-senior-pathway-mapper-grade10-12.streamlit.app) "
+        "to map your mandatory core credits and university prerequisites."
+    )
+
     st.markdown("---")
     
     # Chart
@@ -333,8 +348,6 @@ with st.expander("**Profile Code Glossary: All Combinations Explained**"):
     * **NC / CN (The Synthesizers):** Environmental Design, Science Communication. Blending biology or nature with creative presentation.
     * **SP / PS (The Coordinators):** Event Management, Applied Trades. Blending social organization with hands-on physical execution.
     """)
-
-
 
 
 
